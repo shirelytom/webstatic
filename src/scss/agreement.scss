@@ -1,0 +1,30 @@
+body,html{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.aggreementMain{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  padding-bottom: 150px;
+  overflow-y: auto;
+  font-size: 28px;
+  line-height: 48px;
+  color: #666666;
+  text-align: justify;
+  p{
+    padding: 0;
+    margin: 0;
+    strong{
+      text-decoration: underline;
+    }
+  }
+  .title{
+    color: #333;
+    font-weight: 900;
+  }
+}
