@@ -3,93 +3,6 @@ $baseColor:#2c67B1;
 $color38BE58:#38BE58;
 $colorE1AA31:#E1AA31;
 //------------------------------公共样式------------------------------------------------
-/* <div class="item-content">
-<img src="../assets/imgs/xinwen_img.png" alt="">
-<div class="content">
-  <!-- 标题 -->
-  <p class="title">天天打电话喊做的3-7天快速回复环保分局是否考虑了富士康女</p>
-  <!-- 发表时间 -->
-  <p class="time">2018/12/2 11:01:39</p>
-  <!-- 内容 -->
-  <p class="content-content">
-    3-7天快速排名推广是一个现象级别的SEO方式，随着搜索引擎算法的网上，会被快速的替代掉，要准备做的朋友们也需要快速决策，同行都做了、算法都晚上了，你错过了这一轮机会就会怎么怎么样测试溢出隐藏
-  </p>
-  <!-- 内容标签 -->
-  <div class="content-tag">
-    <p>
-      <span class="tag">行业新闻</span>
-      <span class="tag">OTHER</span>
-    </p>
-    <a href="#" class="more"><span class="glyphicon glyphicon glyphicon-menu-right"></span></a>
-  </div>
-</div>
-</div>
-<div class="item-content">
-<img src="../assets/imgs/xinwen_img1.png" alt="">
-<div class="content">
-  <!-- 标题 -->
-  <p class="title">宜宾东方职校签约北斗网站建设</p>
-  <!-- 发表时间 -->
-  <p class="time">2019/05/10 07：42：18</p>
-  <!-- 内容 -->
-  <p class="content-content">
-    宜宾东方职业技术学院与我公司达成宜宾网站建设项目学校门户网站制作服务协议，些小网站
-    建设及推广推荐选择北斗网络！宜宾网站制作服务......
-  </p>
-  <!-- 内容标签 -->
-  <div class="content-tag">
-    <p>
-      <span class="tag">公司新闻</span>
-      <span class="tag">OTHER</span>
-    </p>
-    <a href="#" class="more"><span class="glyphicon glyphicon glyphicon-menu-right"></span></a>
-  </div>
-</div>
-</div>
-<div class="item-content">
-<img src="../assets/imgs/xinwen_img2.png" alt="">
-<div class="content">
-  <!-- 标题 -->
-  <p class="title">商家惊叹：为什么我的业务......</p>
-  <!-- 发表时间 -->
-  <p class="time">2018/12/09 15:24:24</p>
-  <!-- 内容 -->
-  <p class="content-content">
-    客户的电脑没有中毒，我的电脑搜出来和客户的结果是一样的，都被同行关键词万词霸屏了，
-    这就是当下很火的推广方式：万词霸屏推广，详细介绍霸屏推广与传统网站优化的区别......
-  </p>
-  <!-- 内容标签 -->
-  <div class="content-tag">
-    <p>
-      <span class="tag">网络新闻</span>
-      <span class="tag">OTHER</span>
-    </p>
-    <a href="#" class="more"><span class="glyphicon glyphicon glyphicon-menu-right"></span></a>
-  </div>
-</div>
-</div>
-<div class="item-content">
-<img src="../assets/imgs/xinwen_img3.png" alt="">
-<div class="content">
-  <!-- 标题 -->
-  <p class="title">祝贺公司获得“众盟大数据......”</p>
-  <!-- 发表时间 -->
-  <p class="time">2018/04/23 08:21:37</p>
-  <!-- 内容 -->
-  <p class="content-content">
-    公司正式签约众盟大数据广告真是成为众盟值投广告、众盟聚屏广告、智慧城市等多个项目的“一级代理商”
-    这也是北斗网络在移动端网络营销的重要布局，将建立更完善的企业点上服务生态......
-  </p>
-  <!-- 内容标签 -->
-  <div class="content-tag">
-    <p>
-      <span class="tag">公司公告</span>
-      <span class="tag">OTHER</span>
-    </p>
-    <a href="#" class="more"><span class="glyphicon glyphicon glyphicon-menu-right"></span></a>
-  </div>
-</div>
-</div> */
 body,html,#app{
     width: 100%;
     // height: 100%;
@@ -106,13 +19,16 @@ a{
 table{
     border-collapse: collapse;
 }
-.container{
+/* .container{
     width: 1200px;
     margin: 0 auto;
     padding: 0
-}
+} */
 .fontSize12{
     font-size: 12px
+}
+.fontSize16{
+    font-size: 16px;
 }
 .fontSize18{
     font-size: 18px
@@ -159,15 +75,32 @@ table{
 .marginR-120{
     margin-right: 120px;
 }
+.padding-0{
+    padding: 0 !important;
+}
 .paddingR-10{
     padding-right:10px;
 }
 .paddingLR-10{
     padding:0 10px;
 }
-.borderR-4{
-    border-right: 4px solid #ccc;
+.borderR-2{
+    border-right: 2px solid #ccc;
 }
+.center-block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .middle {
+ 
+    float: none;
+  
+    display: inline-block;
+  
+    vertical-align: middle;
+  
+ }
 //一级标题
 .title-primary{
     width: 100%;
@@ -186,14 +119,17 @@ table{
     }
 }
 //------------------------------私有样式------------------------------------------------
-.index{
+#app{
+    padding: 0 10px;
+}
+/* .index{
     &:hover{
         .nav-content{
             display: block;
         }
 
     }
-}
+} */
 .display{
     display: block;
 }
@@ -201,7 +137,7 @@ table{
 .navBox{
     .navbar-right{
         img{
-            width: 46px !important;
+            width: 80% !important;
             object-fit: contain;
         }
     }
@@ -220,7 +156,7 @@ table{
                 padding-bottom: 0; */
                 padding: 0 12px;
                 img{
-                    width: 246px;
+                    // width: 246px;
                     // height: 100%;
                     object-fit: contain;
                 }
@@ -243,8 +179,8 @@ table{
         // margin-top: 100px;
         transform: translateY(20%);
         img{
-            width: 216px;
-            // width: 40%;
+            // width: 216px;
+            width: 80%;
             object-fit: contain;
         }
     }
@@ -271,8 +207,9 @@ table{
 .nav-content{
     // width: 1534px;
     position: absolute;
-    left: 100%;
-    transform: translateX(-30%);
+    width: 100%;
+/*     left: 100%;
+    transform: translateX(-30%); */
     z-index: 99;
     background-color: $baseColor;
     min-height: 180px;
@@ -323,7 +260,7 @@ table{
 #carousel-example-generic{
     height: 620px;
 }
-.carousel{
+#carousel-example-generic.carousel{
     .carousel-inner{
         height: 100%;
         .item{
@@ -410,11 +347,11 @@ table{
             justify-content: space-around;
         }
         .carousel{
-            width: 344px;
+            // width: 344px;
             text-align: center;
             color: #fff;
             .carousel-inner{
-                height: 608px;
+                // height: 608px;
                 .item{
                     transition: all .5s;
                     &:hover{
@@ -422,7 +359,9 @@ table{
                     }
                     img{
                         box-shadow:2px 2px 5px rgba(0, 0, 0, 0.3);  
-                        height: 608px;
+                        height: 100%;
+                        object-fit: contain;
+                        // height: 608px;
                         // box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;  
                         border-radius: 2px;                 
                     }
@@ -520,7 +459,8 @@ table{
         }
         .content{
             margin-top: 20px;
-            line-height: 56px;
+            // line-height: 56px;
+            line-height: 220%;
             font-size: 20px;
         }
     }
@@ -532,6 +472,20 @@ table{
 /*         #carousel-example-generic5{
            width: 1190px;
         } */
+        .inner1,.inner2{
+            display: none;
+        }
+        /* 小屏幕（平板，大于等于 768px） */
+        @media all and(max-width: 768px) { 
+            .inner2{
+                display: block;
+            }
+        }  
+        @media all and(min-width:768px) {
+            .inner1{
+                display: block;
+            }
+        }     
         .item{
             .itemBox{
                 width: 1190px;
@@ -541,12 +495,17 @@ table{
                 justify-content: space-between;
             }
             .item-item{
-                width: 280px;
-                height: 412px;
+                // width: 100%;
+                // width: 280px;
+                // height: 412px;
+                /* 小屏幕（平板，大于等于 768px） */
+                @media all and(max-width: 768px) { 
+                    width: 100%; 
+                }
                 box-shadow: 2px 4px 60px rgba(0, 0, 0, 0.5);
                 img{
                     width: 100%;
-                    height: 200px;
+                    // height: 200px;
                 }
                 .content{
                     padding: 18px 20px;
@@ -629,15 +588,15 @@ table{
     .contact{
         background-color: #eee;
         // height: 400px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;
         padding: 18px 0;
         box-sizing: border-box;
         .contact-form{
             // flex: 1;
-            width: 601px;
-            padding: 16px 48px;
+            // width: 601px;
+            // padding: 16px 0;
             box-sizing: border-box;
             position: relative;
             &::after{
@@ -653,28 +612,31 @@ table{
             }
             input,textarea{
                 background-color: transparent;
-                width: 501px;
+                // width: 501px;
             }
         }
         .ecode{
-            flex: 1;
+            // flex: 1;
             padding: 0 40px;
             box-sizing: border-box;
-            align-self: center;
+            // align-self: center;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             .ecode-item{
-                display: flex;
+/*                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: center; */
                 font-size: 20px;
                 padding-top: 20px;
                 box-sizing: border-box;
+                // text-align: center;
+
                 img{
-                    width: 230px;
-                    height: 230px;
+                    // width: 230px;
+                    // height: 230px;
+                    vertical-align: middle;
                     border-radius: 4px;
                 }
             }
@@ -688,7 +650,7 @@ footer{
         // width:38px;
         height: 100%;
         // height: 38px;
-        align-self: center; 
+        align-self: flex-start; 
         object-fit: contain;
     }
     .contact-way{
@@ -705,7 +667,7 @@ footer{
         .way-item{
             display: flex;
             flex-direction: row;
-            padding: 20px;
+            padding: 20px 0;
             .content{
                 align-self: center;
             }
@@ -765,21 +727,27 @@ footer{
         padding-top: 32px;
         display: flex;
         flex-direction: row;
-        // justify-content: space-around;
         justify-content: flex-start;
         flex-wrap: wrap;
         align-content: flex-start;
         .case-item{
             // flex: 0.3;
-            width: 380px;
+            // width: 380px;
             position: relative;
             cursor: pointer;
             margin-bottom: 40px;
             margin-right: 10px;
             margin-left: 10px;
+/*             @media all and (max-width:950px){
+                width: 580px;
+            } */
             img{
                 width: 100%;
-                height: 360px;
+                // height: 360px;
+                object-fit: contain;
+/*                 @media all and (max-width:950px){
+                    height: 540px;
+                } */
             }
             .case-introduce{
                 // display: none;
@@ -830,7 +798,7 @@ footer{
     }
     //渐变分割线
     .divider{
-        height: 4px;
+        height: 6px;
         background: radial-gradient(#a7a7a7 0%, white 80%);  
     }
 }
@@ -840,7 +808,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     .introduce-text{
-        margin-right: 150px;
+        // margin-right: 150px;
         .title{
             font-size: 22px;
             font-weight: bold;
@@ -872,7 +840,8 @@ footer{
     }
     .introduce-img{
         img{
-            width: 520px;
+            // width: 520px;
+            object-fit: contain;
             height: 400px;
         }
     }
@@ -926,7 +895,7 @@ footer{
             .showweb{
                 position: absolute;
                 right: 20px;
-                bottom: 40px;
+                bottom: 20px;
                 color: $baseColor;
             }
         }
@@ -1225,24 +1194,38 @@ footer{
             }
         }
         .item-img{
-            margin-top: 80px;
+            // margin-top: 80px;
+            @media all and(min-width:768px) {
+                margin-top: 30%;
+                transform: translateY(-50%);
+            } 
             margin-left: 26px;
             margin-right: 40px;
             img{
-                width: 560px;
+                // width: 560px;
+                width: 100%;
                 object-fit: contain;
             }
         }
         .item-img2{
             margin-left: 20px;
             margin-top: 80px;
+            @media all and(min-width:768px) {
+                margin-top: 30%;
+                transform: translateY(-50%);
+            } 
             img{
-                width: 962px;
+                // width: 962px;
+                width: 100%;
                 object-fit: contain;
             }
         }
         .item-content{
-            margin-top: 80px;
+            @media all and(min-width:768px) {
+                margin-top: 30%;
+                transform: translateY(-50%);
+            } 
+            // margin-top: 80px;
             .item-content-title{
                 font-weight: bold;
                 font-size: 30px;
@@ -1255,14 +1238,71 @@ footer{
                 }
             }
             .item-content-content{
-                width: 400px;
+                // width: 400px;
                 font-size: 20px;
             }
         }
     }
 }
 //------------------------------解决方案------------------------------------------------
+.solution-title{
+    position: absolute;
+    left: 10%;
+    top: 34%;
+    transform: translateY(-50%);
+    color: #fff;
+    .s-title{
+        font-size: 38px;
+    }
+    .title-en{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .content{
+        font-size: 30px;
+    }
+}
+.solution-title2{
+    position: absolute;
+    right: 10%;
+    top: 34%;
+    color: #35bc68;
+    transform: translateY(-50%);
+    .s-title{
+        font-size: 38px;
+        img{
+            width: 38px;
+            height: 38px;
+        }
+    }
+    .title-en{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .content{
+        font-size: 30px;
+    }
+}
+.down{
+    position: absolute;
+    bottom: 80px;
+    left: 16%;
+    img{
+        width: 58px !important;
+        height: 28px !important;
+    }
+}
+.down2{
+    position: absolute;
+    bottom: 80px;
+    right: 18%;
+    img{
+        width: 58px !important;
+        height: 28px !important;
+    }
+}
 .solution-img{
+    position: relative;
     img{
         width: 100%;
         height: 600px;
@@ -1275,6 +1315,7 @@ footer{
         .slide{
             display: flex;
             position: relative;
+            padding: 0 20px;
             .slide-block{
 /*                &:nth-of-type(1){
                      position: absolute;
@@ -1315,7 +1356,7 @@ footer{
                     margin-right: 10px;
                 }
                 .content{
-                    width: 600px;
+                    // width: 600px;
                     padding: 40px 70px;
                     display: none;
                     .title{
@@ -1437,7 +1478,7 @@ footer{
 
 #hhService{
     position: fixed;
-    bottom: 200px;
+    bottom: 240px;
     right: 0;
     display: flex;
     flex-direction: column;
